@@ -99,9 +99,9 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Навигация */}
       <nav className="fixed top-0 w-full z-50 bg-white border-b border-stone-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-1">
+        <div className="max-w-7xl mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
-            <img src={LOGO_URL} alt="Кемпинг Пикник" className="h-28 object-contain" />
+            <img src={LOGO_URL} alt="Кемпинг Пикник" className="h-16 object-contain" />
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
                 О нас
@@ -127,7 +127,7 @@ const Index = () => {
       </nav>
 
       {/* Hero */}
-      <section className="relative pt-32 min-h-screen flex items-center">
+      <section className="relative pt-24 min-h-screen flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${HERO_IMG})` }}
