@@ -422,7 +422,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-stone-800 mb-1">Адрес</h4>
-                    <p className="text-stone-500">Московская обл., трасса М-5, 120 км, поворот на Пикник</p>
+                    <p className="text-stone-500">Забайкальский край, Шилкинский район, ул. Забелина, д. 8</p>
                   </div>
                 </div>
               </Card>
@@ -433,7 +433,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-stone-800 mb-1">Телефон</h4>
-                    <p className="text-stone-500">+7 (900) 000-00-00</p>
+                    <p className="text-stone-500">+7 (995) 554-13-21</p>
                     <p className="text-sm text-stone-400">Ежедневно, круглосуточно</p>
                   </div>
                 </div>
@@ -445,7 +445,7 @@ const Index = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-stone-800 mb-1">Email</h4>
-                    <p className="text-stone-500">info@camping-picnic.ru</p>
+                    <p className="text-stone-500">kufarova1989@mail.ru</p>
                   </div>
                 </div>
               </Card>
@@ -464,11 +464,11 @@ const Index = () => {
             </div>
             <Card className="rounded-2xl overflow-hidden h-96 border-stone-100">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?ll=37.6,55.75&z=10&pt=37.6,55.75,pm2rdm"
+                src="https://yandex.ru/map-widget/v1/?ll=116.0366,51.8595&z=14&pt=116.0366,51.8595,pm2rdm&text=%D0%A8%D0%B8%D0%BB%D0%BA%D0%B0%2C+%D1%83%D0%BB.+%D0%97%D0%B0%D0%B1%D0%B5%D0%BB%D0%B8%D0%BD%D0%B0%2C+8"
                 width="100%"
                 height="100%"
                 frameBorder="0"
-                title="Карта кемпинга Пикник"
+                title="Кемпинг Пикник на карте"
                 className="w-full h-full"
               />
             </Card>
