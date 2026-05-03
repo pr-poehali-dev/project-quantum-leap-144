@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+
+const BOOKING_URL = "https://functions.poehali.dev/ab787c32-b038-4b8a-b401-3517c4659c5b";
 
 const LOGO_URL =
   "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/bucket/4588917f-473b-40cc-b7bf-9e63b4478d2c.png";
@@ -72,13 +75,33 @@ const gallery = [
 ];
 
 const Index = () => {
+  const [form, setForm] = useState({ name: "", phone: "", date: "", place_type: "Палаточное место" });
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("sending");
+    try {
+      const res = await fetch(BOOKING_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (data.success) setStatus("success");
+      else setStatus("error");
+    } catch {
+      setStatus("error");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Навигация */}
-      <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-border shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-3">
+      <nav className="fixed top-0 w-full z-50 bg-white border-b border-stone-100 shadow-sm">
+        <div className="max-w-7xl mx-auto px-6 py-2">
           <div className="flex items-center justify-between">
-            <img src={LOGO_URL} alt="Кемпинг Пикник" className="h-12 object-contain" />
+            <img src={LOGO_URL} alt="Кемпинг Пикник" className="h-20 object-contain" />
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
                 О нас
