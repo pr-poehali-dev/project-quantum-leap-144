@@ -10,7 +10,7 @@ const LOGO_URL =
   "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/bucket/4588917f-473b-40cc-b7bf-9e63b4478d2c.png";
 
 const HERO_IMG =
-  "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/files/caa1f1e7-c92a-457d-ad54-192c038ce594.jpg";
+  "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/bucket/39ab7a18-a002-45fb-b2fd-122839544297.png";
 
 const services = [
   { icon: "Tent", label: "Палаточные места" },
@@ -57,20 +57,20 @@ const prices = [
 
 const gallery = [
   {
-    src: "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/files/caa1f1e7-c92a-457d-ad54-192c038ce594.jpg",
-    alt: "Кемпинг вечером",
+    src: "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/bucket/39ab7a18-a002-45fb-b2fd-122839544297.png",
+    alt: "Природа Забайкалья — цветущий багульник",
   },
   {
-    src: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80",
-    alt: "Палаточная стоянка",
+    src: "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/bucket/31fb22bc-d81f-4531-afa8-827af1eb901b.png",
+    alt: "Река Шилка с высоты",
   },
   {
-    src: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=600&q=80",
-    alt: "Зона костра",
+    src: "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/bucket/050d42b2-9a5e-46d5-8653-e18fbb7c19bd.png",
+    alt: "Закат над сопками Забайкалья",
   },
   {
-    src: "https://images.unsplash.com/photo-1537565266759-34bcd3bd2b4e?w=600&q=80",
-    alt: "Природа вокруг",
+    src: "https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/bucket/db5e5d39-ee3e-4dd4-b0d7-92294b9f347f.png",
+    alt: "Горная река Забайкалья",
   },
 ];
 
@@ -99,9 +99,9 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Навигация */}
       <nav className="fixed top-0 w-full z-50 bg-white border-b border-stone-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-2">
+        <div className="max-w-7xl mx-auto px-6 py-1">
           <div className="flex items-center justify-between">
-            <img src={LOGO_URL} alt="Кемпинг Пикник" className="h-20 object-contain" />
+            <img src={LOGO_URL} alt="Кемпинг Пикник" className="h-28 object-contain" />
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
                 О нас
@@ -127,7 +127,7 @@ const Index = () => {
       </nav>
 
       {/* Hero */}
-      <section className="relative pt-20 min-h-screen flex items-center">
+      <section className="relative pt-32 min-h-screen flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${HERO_IMG})` }}
@@ -207,8 +207,8 @@ const Index = () => {
             <div className="relative">
               <Card className="overflow-hidden rounded-2xl shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=700&q=80"
-                  alt="Кемпинг Пикник"
+                  src="https://cdn.poehali.dev/projects/062e4bcd-6e9d-4a8b-a476-a37f23ece9a8/bucket/31fb22bc-d81f-4531-afa8-827af1eb901b.png"
+                  alt="Река Шилка, Забайкальский край"
                   className="w-full h-[480px] object-cover"
                 />
               </Card>
